@@ -18,7 +18,11 @@ organization := "io.github.axelhj"
 version := "0.1.1"
 
 libraryDependencies ++= Seq(
-  "org.scala-lang.modules" %% "scala-parser-combinators" % "2.3.0",
+  "com.softwaremill.sttp.tapir" %% "tapir-core" % "1.11.9",
+  "com.softwaremill.sttp.tapir" %% "tapir-http4s-server" % "1.11.9",
+  "com.softwaremill.sttp.tapir" %% "tapir-cats" % "1.11.9",
+  "org.http4s" %% "http4s-blaze-server" % "0.23.17",
+  "org.typelevel" %% "cats-effect" % "3.5.5",
   "org.scalatest" %% "scalatest" % "3.2.9" % Test
 )
 
